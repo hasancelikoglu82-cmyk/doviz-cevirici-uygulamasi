@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835162534950",
+    "project_id": "doviz-cepte-bildirim",
+    "storage_bucket": "doviz-cepte-bildirim.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835162534950:android:59f8b640cf4b063159e2e7",
+        "android_client_info": {
+          "package_name": "com.dovizcepte.canlikur"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFv2gkNTGN2JsgGQZOSAsKCTlyMQz-5xE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

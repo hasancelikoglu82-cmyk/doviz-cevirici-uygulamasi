@@ -1,0 +1,55 @@
+name: doviz_takip_app
+description: "Döviz Cepte - Canlı Kur ve Hesaplama Uygulaması"
+publish_to: 'none'
+
+version: 1.1.0+8
+
+environment:
+  sdk: '>=3.10.1 <4.0.0' # SDK versiyonunu güncelledim
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+  google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.8
+  fl_chart: ^1.1.1 # Grafikler için
+  intl: ^0.20.2
+  firebase_core: ^4.2.1
+  firebase_messaging: ^16.0.4
+  url_launcher: ^6.3.2
+  shared_preferences: ^2.5.4
+  showcaseview: ^5.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0 # Lints versiyonunu güncelledim
+  flutter_launcher_icons: "^0.13.1" # <-- YENİ EKLENTİ (LOGO OLUŞTURUCU)
+  flutter_native_splash: ^2.4.7
+
+# Logoyu Oluşturma Ayarları (Bu kısım dev_dependencies'in hemen altında olmalı)
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/logo.png" # <-- LOGONUZUN PROJEDEKİ YOLU
+  min_sdk_android: 21
+  adaptive_icon_background: "#121212" # İkonun arkasındaki beyazlığı kaldırıp koyu yapar
+  adaptive_icon_foreground: "assets/logo.png"
+
+flutter_native_splash:
+  color: "#121212" # Açılış ekranındaki beyazlığı kaldırır (Uygulama renginiz)
+  image: assets/logo.png # Ortadaki logo
+  android_12:
+    color: "#121212"
+    icon_background_color: "#121212" # <-- BU SATIRI EKLEYİN: Logonun arkasındaki daireyi de siyah yapar
+    image: assets/logo.png
+  android: true
+  ios: false
+
+flutter:
+  uses-material-design: true
+
+  # Logoyu buraya tanıttığımızdan emin olmalıyız
+  assets:
+    - assets/logo.png # <-- LOGO DOSYANIZ BURADA!
